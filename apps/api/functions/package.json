@@ -1,0 +1,27 @@
+{
+  "name": "@apps/api-functions",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc -p tsconfig.json",
+    "dev": "firebase emulators:start --project demo-turbo",
+    "deploy": "firebase deploy --only functions --project demo-turbo"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.14.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}
+
+

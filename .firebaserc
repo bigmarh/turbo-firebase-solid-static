@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "demo-turbo"
+  },
+  "targets": {
+    "demo-turbo": {
+      "hosting": {
+        "static": ["static"],
+        "solid": ["solid"]
+      },
+      "functions": {
+        "api": ["api"]
+      }
+    }
+  }
+}
+
+

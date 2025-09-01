@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Tailwind App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900">
+    <main class="container mx-auto p-8">
+      <header class="mb-10">
+        <h1 class="text-3xl font-bold">Static Tailwind App</h1>
+        <p class="text-gray-600">Built with Vite + TailwindCSS</p>
+      </header>
+      <section class="grid gap-6 md:grid-cols-2">
+        <div class="rounded-lg border bg-white p-6 shadow-sm">
+          <h2 class="mb-2 text-xl font-semibold">Welcome</h2>
+          <p>This is a minimal static site in a Turborepo.</p>
+        </div>
+        <div class="rounded-lg border bg-white p-6 shadow-sm">
+          <h2 class="mb-2 text-xl font-semibold">Get Started</h2>
+          <ol class="list-decimal pl-5 text-sm text-gray-700">
+            <li>Run <code>pnpm dev</code> at the repo root.</li>
+            <li>Open the preview URL for this app.</li>
+            <li>Edit <code>apps/static/index.html</code> or <code>src/style.css</code>.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>
+
+

@@ -1,0 +1,31 @@
+{
+  "name": "turbo-template-firebase-solid-static",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.7.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "preview": "turbo run preview --parallel",
+    "emulators": "firebase emulators:start",
+    "deploy": "firebase deploy",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo clean",
+    "deploy:apps": "turbo run deploy"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.3",
+    "typescript": "^5.5.4",
+    "firebase-tools": "^13.14.0"
+  }
+}
+
+

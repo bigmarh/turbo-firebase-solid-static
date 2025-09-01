@@ -1,0 +1,14 @@
+{
+  "name": "@apps/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir ./functions run dev",
+    "build": "pnpm --dir ./functions run build",
+    "deploy": "pnpm --dir ./functions run deploy",
+    "lint": "echo 'no lint'",
+    "test": "echo 'no tests'"
+  }
+}
+
+
